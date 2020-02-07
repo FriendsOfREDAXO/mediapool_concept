@@ -1,0 +1,170 @@
+.button-widget-show{
+	position:absolute;
+	top:90px;
+	right:15px;
+	color:#000;
+}
+
+.rex-widget{
+	position: fixed;
+	top: 0px;
+	right: 0;
+	z-index: 100;
+	padding-top: 70px;
+	transform:translateX(100%);
+	transition:transform .3s;
+}
+.rex-widget.is-visible{
+	transform:translateX(0);
+}
+.widget-container{
+	padding: 40px 15px;
+	background-color: #324050;
+	position:relative;
+}
+.widget-main{
+	display: inline-block;
+	padding-right: 15px;
+	vertical-align: top;
+}
+.widget-close{
+	position:absolute;
+	top:15px;
+	right:15px;
+	color:#fff;
+	font-weight:600;
+	cursor:pointer;
+}
+.widget-title{
+	color: #f3f6fb;
+	font-size: 18px;
+}
+.widget-menu{
+	margin: 30px 0;
+}
+.widget-menu #filter-tag{
+	display: table-cell;
+    width: 240px;
+    vertical-align: middle;
+    margin-left: 30px;
+}
+.widget-content{
+	color: #f3f6fb;
+	font-size: 18px;
+}
+.widget-medias{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 15px;
+}
+.widget-media{
+	background-color: #4b9ad9;
+	height: 113.33px;
+	cursor:pointer;
+	position:relative;
+	transition:transform .3s, opacity .3s;
+}
+.widget-media.is-hidden{
+	display:none;
+}
+.widget-media.is-uploading{
+	transform:scale(0);
+	opacity:0;
+}
+.widget-aside{
+	display:inline-block;
+	vertical-align: top;
+	margin-top: 120px;
+	width:0;
+	opacity:0;
+	transition:.3s;
+}
+.widget-aside.is-visible{
+	width:250px;
+	padding: 0 15px;
+	border-left: 1px solid #fff;
+	opacity:1;
+}
+.widget-meta-field{
+	color:#fff;
+	cursor: text;
+	margin-bottom:15px;
+}
+.widget-meta-field.is-editable:after{
+	content:"✎";
+	display:inline;
+	opacity:0;
+	margin-left:5px;
+}
+.widget-meta-field.is-editable:hover:after{
+	opacity:1;
+}
+.widget-meta-picture{
+	background-color: #4b9ad9;
+	height: 200px;
+	cursor:pointer;
+}
+.widget-meta-title{
+	font-weight:600;
+}
+.widget-upload{
+	text-align:center;
+	border:dashed 1px #fff;
+	transform:scale(0);
+	transition:transform .3s;
+	height:0;
+	visibility:hidden;
+	padding:0 15px;
+}
+.widget-upload.is-visible{
+	transform:scale(1);
+	height:220px;
+	visibility:visible;
+	padding:15px;
+	margin-bottom:15px;
+}
+
+.rex-dialog{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100vw;
+	height:100vh;
+	background-color:rgba(0,0,0,0.8);
+	z-index:100;
+	visibility:hidden;
+	opacity:0;
+	transition:opacity .3s;
+}
+.rex-dialog.is-visible{
+	visibility:visible;
+	opacity:1;
+}
+.dialog-container{
+	position:absolute;
+	background-color:#fff;
+	padding:15px;
+	width:600px;
+	height:400px;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.dialog-close{
+	position:absolute;
+	top:15px;
+	right:15px;
+	font-weight:600;
+	cursor:pointer;
+}
+.dialog-title{
+	font-size:18px;
+}
+.dialog-content .upload-container{
+	text-align:center;
+	top:50%;
+	left:0;
+	position:absolute;
+	transform:translate(0,-50%);
+	width:100%;
+}
