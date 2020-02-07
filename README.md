@@ -1,5 +1,5 @@
-# linkmap_concept
-This is a Redaxo 5 concept addon for a new linkmap widget.
+# mediapool_concept
+This is a Redaxo 5 concept addon for a new mediapool widget.
 
 ![Structure Concept Frontendbuilder](docs/mediapool_concept_widget.png)
 
